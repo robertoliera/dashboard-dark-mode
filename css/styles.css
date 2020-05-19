@@ -43,6 +43,8 @@ body {
 .dark-mode-title {
   color: var(--cardTitle);
   font-weight: bold;
+  margin: 0;
+  line-height: 1.5;
 }
 
 .checkbox {
@@ -54,12 +56,12 @@ body {
 }
 
 .switch {
-  height: 40px;
+  height: 25px;
   display: block;
   border-radius: 20px;
   background: var(--switch);
-  width: 80px;
-  padding: 5px;
+  width: 50px;
+  padding: 3px;
   box-sizing: border-box;
   cursor: pointer;
   user-select: none;
@@ -68,11 +70,11 @@ body {
 .switch::before {
   content: "";
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   background: var(--switchSpinner);
   border-radius: 50%;
-  transform: translateX(40px);
+  transform: translateX(23px);
   transition: 0.3s;
   will-change: transform;
 }
@@ -280,7 +282,7 @@ h2 {
 
   .header-grid {
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 150px;
   }
 }
 
