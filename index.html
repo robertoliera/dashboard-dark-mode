@@ -13,8 +13,18 @@
 <body>
     <header class="header">
         <div class="wrapper">
-            <h1>Social Media Dashboard</h1>
-            <p class="header-total">Total Followers: 23,004</p>
+            <div class="header-grid">
+                <div>
+                    <h1>Social Media Dashboard</h1>
+                    <p class="header-total">Total Followers: 23,004</p>
+                </div>
+                <div class="dark-mode">
+                    <p class="dark-mode-title">Dark Mode</p>
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <label class="switch" for="checkbox">
+                    </label>
+                </div>
+            </div>
         </div>
     </header>
     <section class="top-cards">
@@ -74,7 +84,7 @@
                         <span class="card-followers-number">8339</span>
                         <span class="card-followers-title">Followers</span>
                     </p>
-                    <p class="card-today">
+                    <p class="card-today red">
                         <img src="images/icon-down.svg" alt="">
                         144 today
                     </p>
@@ -196,6 +206,7 @@
             </div>
         </div>
     </section>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
