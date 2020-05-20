@@ -61,7 +61,7 @@ body {
 }
 
 .switch {
-  height: 25px;
+  height: 26px;
   display: block;
   border-radius: 20px;
   background: var(--switch);
@@ -91,7 +91,7 @@ body {
 }
 .header h1 {
   margin: 0;
-  font-size: 1.7em;
+  font-size: 1.5em;
   color: var(--baseColor);
 }
 .header__total {
