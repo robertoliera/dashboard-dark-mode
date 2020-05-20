@@ -8,21 +8,27 @@ body {
 :root {
   --lime-green: hsl(163, 72%, 41%);
   --bright-red: hsl(356, 69%, 56%);
-
   --facebook: #168ef4;
   --twitter: hsl(203, 89%, 53%);
   --instagram-1: hsl(37, 97%, 70%);
   --instagram-2: hsl(329, 70%, 58%);
   --youtube: hsl(348, 97%, 39%);
-
   /* light theme */
   --baseBackground: hsl(0, 0%, 100%);
-  --patternTop: hsl(225, 100%, 98%); /* top bg pattern */
-  --cardBackground: hsl(227, 47%, 96%); /* bg cards */
-  --cardTitle: hsl(228, 12%, 44%); /* color text */
-  --baseColor: hsl(230, 17%, 14%); /* text */
+  --patternTop: hsl(225, 100%, 98%);
+  /* top bg pattern */
+  --cardBackground: hsl(227, 47%, 96%);
+  /* bg cards */
+  --cardTitle: hsl(228, 12%, 44%);
+  /* color text */
+  --baseColor: hsl(230, 17%, 14%);
+  /* text */
   --switchSpinner: white;
   --switch: #5f616d;
+}
+
+.red {
+  color: var(--bright-red) !important;
 }
 
 .wrapper {
@@ -34,13 +40,12 @@ body {
   row-gap: 25px;
 }
 
-.dark-mode {
+.darkmode {
   display: flex;
   justify-content: space-between;
   padding-top: 1em;
 }
-
-.dark-mode-title {
+.darkmode__title {
   color: var(--cardTitle);
   font-weight: bold;
   margin: 0;
@@ -66,8 +71,7 @@ body {
   cursor: pointer;
   user-select: none;
 }
-
-.switch::before {
+.switch:before {
   content: "";
   display: block;
   width: 20px;
@@ -85,14 +89,12 @@ body {
   border-radius: 0 0 20px 20px;
   padding-top: 2em;
 }
-
 .header h1 {
   margin: 0;
   font-size: 1.7em;
   color: var(--baseColor);
 }
-
-.header-total {
+.header__total {
   color: var(--cardTitle);
   margin: 0.5em 0;
   font-weight: 700;
@@ -104,8 +106,7 @@ body {
   margin-top: -50px;
   margin-bottom: 3em;
 }
-
-.card {
+.top-cards .card {
   border-radius: 8px;
   overflow: hidden;
   background: var(--cardBackground);
@@ -113,8 +114,7 @@ body {
   padding: 1.7em 0;
   position: relative;
 }
-
-.card:before {
+.top-cards .card:before {
   content: "";
   height: 4px;
   display: block;
@@ -124,28 +124,19 @@ body {
   right: 0;
   top: 0;
 }
-
-.card.facebook::before {
+.top-cards .card.facebook::before {
   background: var(--facebook);
 }
-
-.card.twitter::before {
+.top-cards .card.twitter::before {
   background: var(--twitter);
 }
-
-.card.instagram::before {
-  background-image: linear-gradient(
-    to right,
-    var(--instagram-1) 0%,
-    var(--instagram-2) 100%
-  );
+.top-cards .card.instagram::before {
+  background-image: linear-gradient(to right, var(--instagram-1) 0%, var(--instagram-2) 100%);
 }
-
-.card.youtube::before {
+.top-cards .card.youtube::before {
   background: var(--youtube);
 }
-
-.card-title {
+.top-cards .card__title {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,28 +144,21 @@ body {
   font-size: 0.9em;
   font-weight: bold;
 }
-
-.card-title img {
+.top-cards .card__title img {
   margin-right: 5px;
 }
-
-.card-followers {
-}
-
-.card-followers-number {
+.top-cards .card__followers__number {
   font-size: 50px;
   font-weight: 700;
 }
-
-.card-followers-title {
+.top-cards .card__followers__title {
   display: block;
   text-transform: uppercase;
   color: var(--cardTitle);
   letter-spacing: 5px;
   font-size: 0.75em;
 }
-
-.card-today {
+.top-cards .card__today {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -183,24 +167,17 @@ body {
   font-size: 0.7em;
   font-weight: bold;
 }
-
-.card-today img {
+.top-cards .card__today img {
   margin-right: 5px;
-}
-
-.card-today.red {
-  color: var(--bright-red);
 }
 
 .overview {
   padding-bottom: 2em;
 }
-
-h2 {
+.overview h2 {
   color: var(--baseColor);
 }
-
-.card-small {
+.overview .card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 1em;
@@ -208,28 +185,23 @@ h2 {
   border-radius: 8px;
   padding: 1.7em;
 }
-
-.card-small p {
+.overview .card p {
   margin: 0;
 }
-
-.card-small-views {
+.overview .card__views {
   color: var(--cardTitle);
   font-weight: bold;
   font-size: 0.9em;
 }
-
-.card-small-icon {
+.overview .card__icon {
   text-align: right;
 }
-
-.card-small-number {
+.overview .card__number {
   font-weight: bold;
   font-size: 2.5em;
   line-height: 0.9;
 }
-
-.card-small-percentage {
+.overview .card__percentage {
   text-align: right;
   color: var(--lime-green);
   display: flex;
@@ -238,17 +210,11 @@ h2 {
   font-size: 0.8em;
   font-weight: bold;
 }
-
-.card-small-percentage.red {
-  color: var(--bright-red);
-}
-
-.card-small-percentage span {
+.overview .card__percentage span {
   display: flex;
   align-items: center;
 }
-
-.card-small-percentage img {
+.overview .card__percentage img {
   margin-right: 5px;
 }
 
@@ -263,45 +229,51 @@ h2 {
     margin: auto;
   }
 }
-
 @media screen and (min-width: 768px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 25px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .grid {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 25px;
   }
-  .header-total {
+
+  .header__total {
     border: none;
   }
 
-  .header-grid {
+  .header__grid {
     display: grid;
     grid-template-columns: 1fr 150px;
   }
 }
-
 .is-dark-mode {
   --baseBackground: hsl(230, 17%, 14%);
-  --patternTop: hsl(232, 19%, 15%); /* top bg pattern */
-  --cardBackground: hsl(228, 28%, 20%); /* bg cards */
-  --cardTitle: hsl(228, 34%, 66%); /* color text */
-  --baseColor: hsl(0, 0%, 100%); /* text */
+  --patternTop: hsl(232, 19%, 15%);
+  /* top bg pattern */
+  --cardBackground: hsl(228, 28%, 20%);
+  /* bg cards */
+  --cardTitle: hsl(228, 34%, 66%);
+  /* color text */
+  --baseColor: hsl(0, 0%, 100%);
+  /* text */
   --switchSpinner: #262a45;
   --switch: linear-gradient(to right, #4796d2 0%, #37ce8f 100%);
 }
 
 .is-light-mode {
   --baseBackground: hsl(0, 0%, 100%);
-  --patternTop: hsl(225, 100%, 98%); /* top bg pattern */
-  --cardBackground: hsl(227, 47%, 96%); /* bg cards */
-  --cardTitle: hsl(228, 12%, 44%); /* color text */
-  --baseColor: hsl(230, 17%, 14%); /* text */
+  --patternTop: hsl(225, 100%, 98%);
+  /* top bg pattern */
+  --cardBackground: hsl(227, 47%, 96%);
+  /* bg cards */
+  --cardTitle: hsl(228, 12%, 44%);
+  /* color text */
+  --baseColor: hsl(230, 17%, 14%);
+  /* text */
   --switchSpinner: white;
   --switch: hsl(230, 22%, 74%);
 }
@@ -309,11 +281,17 @@ h2 {
 @media (prefers-color-scheme: dark) {
   :root {
     --baseBackground: hsl(230, 17%, 14%);
-    --patternTop: hsl(232, 19%, 15%); /* top bg pattern */
-    --cardBackground: hsl(228, 28%, 20%); /* bg cards */
-    --cardTitle: hsl(228, 34%, 66%); /* color text */
-    --baseColor: hsl(0, 0%, 100%); /* text */
+    --patternTop: hsl(232, 19%, 15%);
+    /* top bg pattern */
+    --cardBackground: hsl(228, 28%, 20%);
+    /* bg cards */
+    --cardTitle: hsl(228, 34%, 66%);
+    /* color text */
+    --baseColor: hsl(0, 0%, 100%);
+    /* text */
     --switchSpinner: #262a45;
     --switch: linear-gradient(to right, #4796d2 0%, #37ce8f 100%);
   }
 }
+
+/*# sourceMappingURL=styles.css.map */

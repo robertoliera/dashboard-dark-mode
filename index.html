@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Media Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="static/css/styles.css">
 
 </head>
 
 <body>
     <header class="header">
         <div class="wrapper">
-            <div class="header-grid">
+            <div class="header__grid">
                 <div>
                     <h1>Social Media Dashboard</h1>
-                    <p class="header-total">Total Followers: 23,004</p>
+                    <p class="header__total">Total Followers: 23,004</p>
                 </div>
-                <div class="dark-mode">
-                    <p class="dark-mode-title">Dark Mode</p>
+                <div class="darkmode">
+                    <p class="darkmode__title">Dark Mode</p>
                     <input type="checkbox" class="checkbox" id="checkbox">
                     <label class="switch" for="checkbox">
                     </label>
@@ -31,61 +31,61 @@
         <div class="wrapper">
             <div class="grid">
                 <article class="card facebook">
-                    <p class="card-title">
-                        <img src="images/icon-facebook.svg" alt="">
+                    <p class="card__title">
+                        <img src="static/images/icon-facebook.svg" alt="logo facebook">
                         @robertoliera
                     </p>
-                    <p class="card-followers">
-                        <span class="card-followers-number">1987</span>
-                        <span class="card-followers-title">Followers</span>
+                    <p class="card__followers">
+                        <span class="card__followers__number">1987</span>
+                        <span class="card__followers__title">Followers</span>
                     </p>
-                    <p class="card-today">
-                        <img src="images/icon-up.svg" alt="">
+                    <p class="card__today">
+                        <img src="static/images/icon-up.svg" alt="icon arrow up">
                         12 today
                     </p>
                 </article>
 
                 <article class="card twitter">
-                    <p class="card-title">
-                        <img src="images/icon-twitter.svg" alt="">
+                    <p class="card__title">
+                        <img src="static/images/icon-twitter.svg" alt="logo twitter">
                         @robertoliera
                     </p>
-                    <p class="card-followers">
-                        <span class="card-followers-number">1044</span>
-                        <span class="card-followers-title">Followers</span>
+                    <p class="card__followers">
+                        <span class="card__followers__number">1044</span>
+                        <span class="card__followers__title">Followers</span>
                     </p>
-                    <p class="card-today">
-                        <img src="images/icon-up.svg" alt="">
+                    <p class="card__today">
+                        <img src="static/images/icon-up.svg" alt="icon arrow up">
                         99 today
                     </p>
                 </article>
 
                 <article class="card instagram">
-                    <p class="card-title">
-                        <img src="images/icon-instagram.svg" alt="">
+                    <p class="card__title">
+                        <img src="static/images/icon-instagram.svg" alt="logo instagram">
                         @robertoliera
                     </p>
-                    <p class="card-followers">
-                        <span class="card-followers-number">11k</span>
-                        <span class="card-followers-title">Followers</span>
+                    <p class="card__followers">
+                        <span class="card__followers__number">11k</span>
+                        <span class="card__followers__title">Followers</span>
                     </p>
-                    <p class="card-today">
-                        <img src="images/icon-up.svg" alt="">
+                    <p class="card__today">
+                        <img src="static/images/icon-up.svg" alt="icon arrow up">
                         1099 today
                     </p>
                 </article>
 
                 <article class="card youtube">
-                    <p class="card-title">
-                        <img src="images/icon-youtube.svg" alt="">
+                    <p class="card__title">
+                        <img src="static/images/icon-youtube.svg" alt="logo youtube">
                         @robertoliera
                     </p>
-                    <p class="card-followers">
-                        <span class="card-followers-number">8339</span>
-                        <span class="card-followers-title">Followers</span>
+                    <p class="card__followers">
+                        <span class="card__followers__number">8339</span>
+                        <span class="card__followers__title">Followers</span>
                     </p>
-                    <p class="card-today red">
-                        <img src="images/icon-down.svg" alt="">
+                    <p class="card__today red">
+                        <img src="static/images/icon-down.svg" alt="icon arrow down">
                         144 today
                     </p>
                 </article>
@@ -99,106 +99,106 @@
         <div class="wrapper">
             <h2>Overview - Today</h2>
             <div class="grid">
-                <div class="card-small">
-                    <p class="card-small-views">Page Views</p>
-                    <p class="card-small-icon">
-                        <img src="images/icon-facebook.svg" alt="">
+                <div class="card">
+                    <p class="card__views">Page Views</p>
+                    <p class="card__icon">
+                        <img src="static/images/icon-facebook.svg" alt="logo facebook">
                     </p>
-                    <p class="card-small-number">87</p>
-                    <p class="card-small-percentage">
+                    <p class="card__number">87</p>
+                    <p class="card__percentage">
                         <span>
-                            <img src="images/icon-up.svg" alt="">
+                            <img src="static/images/icon-up.svg" alt="icon arrow up">
                             3%
                         </span>
                     </p>
                 </div>
-                <div class="card-small">
-                    <p class="card-small-views">Likes</p>
-                    <p class="card-small-icon">
-                        <img src="images/icon-facebook.svg" alt="">
+                <div class="card">
+                    <p class="card__views">Likes</p>
+                    <p class="card__icon">
+                        <img src="static/images/icon-facebook.svg" alt="logo facebook">
                     </p>
-                    <p class="card-small-number">52</p>
-                    <p class="card-small-percentage red">
+                    <p class="card__number">52</p>
+                    <p class="card__percentage red">
                         <span>
-                            <img src="images/icon-down.svg" alt="">
+                            <img src="static/images/icon-down.svg" alt="icon arrow down">
                             2%
                         </span>
                     </p>
                 </div>
-                <div class="card-small">
-                    <p class="card-small-views">Likes</p>
-                    <p class="card-small-icon">
-                        <img src="images/icon-instagram.svg" alt="">
+                <div class="card">
+                    <p class="card__views">Likes</p>
+                    <p class="card__icon">
+                        <img src="static/images/icon-instagram.svg" alt="logo instagram">
                     </p>
-                    <p class="card-small-number">5462</p>
-                    <p class="card-small-percentage">
+                    <p class="card__number">5462</p>
+                    <p class="card__percentage">
                         <span>
-                            <img src="images/icon-up.svg" alt="">
+                            <img src="static/images/icon-up.svg" alt="icon arrow up">
                             2257%
                         </span>
                     </p>
                 </div>
-                <div class="card-small">
-                    <p class="card-small-views">Profile Views</p>
-                    <p class="card-small-icon">
-                        <img src="images/icon-instagram.svg" alt="">
+                <div class="card">
+                    <p class="card__views">Profile Views</p>
+                    <p class="card__icon">
+                        <img src="static/images/icon-instagram.svg" alt="logo instagram">
                     </p>
-                    <p class="card-small-number">52k</p>
-                    <p class="card-small-percentage">
+                    <p class="card__number">52k</p>
+                    <p class="card__percentage">
                         <span>
-                            <img src="images/icon-up.svg" alt="">
+                            <img src="static/images/icon-up.svg" alt="icon arrow up">
                             1375%
                         </span>
                     </p>
                 </div>
-                <div class="card-small">
-                    <p class="card-small-views">Retweets</p>
-                    <p class="card-small-icon">
-                        <img src="images/icon-twitter.svg" alt="">
+                <div class="card">
+                    <p class="card__views">Retweets</p>
+                    <p class="card__icon">
+                        <img src="static/images/icon-twitter.svg" alt="logo twitter">
                     </p>
-                    <p class="card-small-number">117</p>
-                    <p class="card-small-percentage">
+                    <p class="card__number">117</p>
+                    <p class="card__percentage">
                         <span>
-                            <img src="images/icon-up.svg" alt="">
+                            <img src="static/images/icon-up.svg" alt="icon arrow up">
                             303%
                         </span>
                     </p>
                 </div>
-                <div class="card-small">
-                    <p class="card-small-views">Likes</p>
-                    <p class="card-small-icon">
-                        <img src="images/icon-twitter.svg" alt="">
+                <div class="card">
+                    <p class="card__views">Likes</p>
+                    <p class="card__icon">
+                        <img src="static/images/icon-twitter.svg" alt="logo twitter">
                     </p>
-                    <p class="card-small-number">507</p>
-                    <p class="card-small-percentage">
+                    <p class="card__number">507</p>
+                    <p class="card__percentage">
                         <span>
-                            <img src="images/icon-up.svg" alt="">
+                            <img src="static/images/icon-up.svg" alt="icon arrow up">
                             553%
                         </span>
                     </p>
                 </div>
-                <div class="card-small">
-                    <p class="card-small-views">Likes</p>
-                    <p class="card-small-icon">
-                        <img src="images/icon-youtube.svg" alt="">
+                <div class="card">
+                    <p class="card__views">Likes</p>
+                    <p class="card__icon">
+                        <img src="static/images/icon-youtube.svg" alt="logo youtube">
                     </p>
-                    <p class="card-small-number">107</p>
-                    <p class="card-small-percentage red">
+                    <p class="card__number">107</p>
+                    <p class="card__percentage red">
                         <span>
-                            <img src="images/icon-down.svg" alt="">
+                            <img src="static/images/icon-down.svg" alt="icon arrow down">
                             19%
                         </span>
                     </p>
                 </div>
-                <div class="card-small">
-                    <p class="card-small-views">Total Views</p>
-                    <p class="card-small-icon">
-                        <img src="images/icon-youtube.svg" alt="">
+                <div class="card">
+                    <p class="card__views">Total Views</p>
+                    <p class="card__icon">
+                        <img src="static/images/icon-youtube.svg" alt="logo youtube">
                     </p>
-                    <p class="card-small-number">1407</p>
-                    <p class="card-small-percentage red">
+                    <p class="card__number">1407</p>
+                    <p class="card__percentage red">
                         <span>
-                            <img src="images/icon-down.svg" alt="">
+                            <img src="static/images/icon-down.svg" alt="icon arrow down">
                             12%
                         </span>
                     </p>
@@ -206,7 +206,7 @@
             </div>
         </div>
     </section>
-    <script src="js/app.js"></script>
+    <script src="static/js/app.js"></script>
 </body>
 
 </html>
