@@ -20,6 +20,7 @@ body {
   --patternTop: hsl(225, 100%, 98%); /* top bg pattern */
   --cardBackground: hsl(227, 47%, 96%); /* bg cards */
   --cardTitle: hsl(228, 12%, 44%); /* color text */
+  --cardHover: #e1e3f0;
   --baseColor: hsl(230, 17%, 14%); /* text */
   --switchSpinner: white;
   --switch: #5f616d;
@@ -116,6 +117,10 @@ body {
     padding: 1.7em 0;
     position: relative;
 
+    &:hover {
+      background: var(--cardHover);
+    }
+
     &:before {
       content: "";
       height: 4px;
@@ -205,6 +210,10 @@ body {
     border-radius: 8px;
     padding: 1.7em;
 
+    &:hover {
+      background: var(--cardHover);
+    }
+
     p {
       margin: 0;
     }
@@ -285,6 +294,7 @@ body {
   --patternTop: hsl(232, 19%, 15%); /* top bg pattern */
   --cardBackground: hsl(228, 28%, 20%); /* bg cards */
   --cardTitle: hsl(228, 34%, 66%); /* color text */
+  --cardHover: #333a56;
   --baseColor: hsl(0, 0%, 100%); /* text */
   --switchSpinner: #262a45;
   --switch: linear-gradient(to right, #4796d2 0%, #37ce8f 100%);
@@ -295,6 +305,7 @@ body {
   --patternTop: hsl(225, 100%, 98%); /* top bg pattern */
   --cardBackground: hsl(227, 47%, 96%); /* bg cards */
   --cardTitle: hsl(228, 12%, 44%); /* color text */
+  --cardHover: #e1e3f0;
   --baseColor: hsl(230, 17%, 14%); /* text */
   --switchSpinner: white;
   --switch: hsl(230, 22%, 74%);
@@ -306,6 +317,7 @@ body {
     --patternTop: hsl(232, 19%, 15%); /* top bg pattern */
     --cardBackground: hsl(228, 28%, 20%); /* bg cards */
     --cardTitle: hsl(228, 34%, 66%); /* color text */
+    --cardHover: #333a56;
     --baseColor: hsl(0, 0%, 100%); /* text */
     --switchSpinner: #262a45;
     --switch: linear-gradient(to right, #4796d2 0%, #37ce8f 100%);

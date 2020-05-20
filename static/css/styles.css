@@ -21,6 +21,7 @@ body {
   /* bg cards */
   --cardTitle: hsl(228, 12%, 44%);
   /* color text */
+  --cardHover: #e1e3f0;
   --baseColor: hsl(230, 17%, 14%);
   /* text */
   --switchSpinner: white;
@@ -114,6 +115,9 @@ body {
   padding: 1.7em 0;
   position: relative;
 }
+.top-cards .card:hover {
+  background: var(--cardHover);
+}
 .top-cards .card:before {
   content: "";
   height: 4px;
@@ -184,6 +188,9 @@ body {
   background: var(--cardBackground);
   border-radius: 8px;
   padding: 1.7em;
+}
+.overview .card:hover {
+  background: var(--cardHover);
 }
 .overview .card p {
   margin: 0;
@@ -258,6 +265,7 @@ body {
   /* bg cards */
   --cardTitle: hsl(228, 34%, 66%);
   /* color text */
+  --cardHover: #333a56;
   --baseColor: hsl(0, 0%, 100%);
   /* text */
   --switchSpinner: #262a45;
@@ -272,6 +280,7 @@ body {
   /* bg cards */
   --cardTitle: hsl(228, 12%, 44%);
   /* color text */
+  --cardHover: #e1e3f0;
   --baseColor: hsl(230, 17%, 14%);
   /* text */
   --switchSpinner: white;
@@ -287,6 +296,7 @@ body {
     /* bg cards */
     --cardTitle: hsl(228, 34%, 66%);
     /* color text */
+    --cardHover: #333a56;
     --baseColor: hsl(0, 0%, 100%);
     /* text */
     --switchSpinner: #262a45;
